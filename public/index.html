@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -9,12 +9,12 @@
       name="description"
       content="Web site created using create-react-app"
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" /> -->
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!-- <link rel="manifest" href="%PUBLIC_URL%/manifest.json" /> -->
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -24,11 +24,11 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <!-- <title>React App</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <div id="root"></div> -->
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -39,5 +39,109 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-  </body>
+  <!-- </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing Store</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="font-sans bg-gray-50">
+
+    <!-- Header Section -->
+    <header class="bg-gray-100 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- Logo or brand name -->
+            <div class="font-bold text-lg">
+                <a href="/">Clothing Store</a>
+            </div>
+
+            <!-- Navbar Links -->
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#" class="text-gray-800">Men</a></li>
+                    <li><a href="#" class="text-gray-800">Women</a></li>
+                    <li><a href="#" class="text-gray-800">Objects</a></li>
+                    <li><a href="#" class="text-gray-800">Journal</a></li>
+                </ul>
+            </nav>
+
+            <!-- Login & Cart -->
+            <div class="flex items-center space-x-4">
+                <a href="#" class="text-gray-800">Login</a>
+                <a href="#" class="text-gray-800">
+                    <i class="fas fa-shopping-cart"></i> Cart
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Banner Section (Hero Section) -->
+    <section class="bg-cover bg-center h-96 text-white flex items-center justify-center relative"
+        style="background-image: url('path_to_your_banner_image.jpg');">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="z-10 text-center">
+            <h2 class="text-4xl font-semibold">New Essential Tees</h2>
+            <p class="mt-2">Discover our latest collection</p>
+            <a href="#" class="mt-4 inline-block bg-black text-white px-6 py-2 rounded-full">Learn More</a>
+        </div>
+    </section>
+
+    <!-- Category Filter Section -->
+    <section class="py-8 bg-gray-50">
+        <div class="container mx-auto text-center">
+            <h3 class="text-2xl font-semibold mb-4">Shop by Category</h3>
+            <div class="flex justify-center space-x-6">
+                <button class="px-6 py-2 text-white bg-black rounded-full">Men</button>
+                <button class="px-6 py-2 text-white bg-black rounded-full">Women</button>
+                <button class="px-6 py-2 text-white bg-black rounded-full">Kids</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Grid Section -->
+    <section class="py-12">
+        <div class="container mx-auto">
+            <h3 class="text-3xl font-semibold text-center mb-8">Men's Essentials</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                <!-- Product Card 1 -->
+                <div class="border rounded-lg overflow-hidden shadow-lg">
+                    <img src="path_to_product_image.jpg" alt="Product" class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h4 class="text-lg font-semibold">Men's Essential Tee</h4>
+                        <p class="text-gray-600">$30.00</p>
+                        <button class="mt-4 bg-black text-white px-6 py-2 rounded-full">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Repeat for other products -->
+                <div class="border rounded-lg overflow-hidden shadow-lg">
+                    <img src="path_to_product_image.jpg" alt="Product" class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h4 class="text-lg font-semibold">Men's Essential Tee</h4>
+                        <p class="text-gray-600">$30.00</p>
+                        <button class="mt-4 bg-black text-white px-6 py-2 rounded-full">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Add more product cards here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Clothing Store. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
 </html>
+
